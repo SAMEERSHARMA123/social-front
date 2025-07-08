@@ -165,7 +165,7 @@ const OtpInput = () => {
           otp: parseInt(enteredOtp),
         };
         const response = await axios.post(
-          'http://localhost:5000/graphql', 
+          'social-back-sigma.vercel.app/graphql', 
           { query, variables }, 
           { headers: { 'Content-Type': 'application/json' }, withCredentials: true }
         );
