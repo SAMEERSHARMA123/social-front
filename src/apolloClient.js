@@ -7,7 +7,7 @@ import {
 import { createUploadLink } from "apollo-upload-client";
 
 const uploadLink = createUploadLink({
-  uri: "social-back-sigma.vercel.app/graphql", // ✅ your backend GraphQL URL
+  uri: "https://social-back-sigma.vercel.app/graphql", // ✅ your backend GraphQL URL
   credentials: "include", // ✅ if you're using cookies
 });
 
