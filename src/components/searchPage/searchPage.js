@@ -25,7 +25,7 @@ const SearchPage = () => {
 useEffect(() => {
   const testQuery = async () => {
     try {
-      const res = await axios.post('social-back-sigma.vercel.app/graphql', {
+      const res = await axios.post('https://social-back-sigma.vercel.app/graphql', {
         query: `
           query GetSuggestions($userId: ID!) {
             suggestedUsers(userId: $userId) {
@@ -131,7 +131,7 @@ useEffect(() => {
 
     try {
       const response = await axios.post(
-        'social-back-sigma.vercel.app/graphql',
+        'https://social-back-sigma.vercel.app/graphql',
         { query: graphqlQuery, variables: { username: query } },
         {
           headers: { 'Content-Type': 'application/json' },
