@@ -97,7 +97,7 @@ const RegisterForm = () => {
         phone: formData.phone,
       };
       const response = await axios.post(
-        'social-back-sigma.vercel.app/graphql',
+        'https://social-back-sigma.vercel.app/graphql',
         { query, variables },
         { headers: { 'Content-Type': 'application/json' }, withCredentials: true }
       );
