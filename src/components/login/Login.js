@@ -58,7 +58,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:5000/graphql',
+        'social-back-sigma.vercel.app/graphql',
         { query, variables },
         {
           headers: {
